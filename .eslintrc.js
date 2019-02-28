@@ -24,7 +24,7 @@ module.exports = {
         "import"
     ],
     "rules": {
-        "no-console": ['error'],
+        "no-console": ['off'],
         "indent": ['error', 4]
     }
 };
