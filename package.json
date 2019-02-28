@@ -1,0 +1,36 @@
+{
+  "name": "hello-npm-script",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "lint:js": "eslint *.js",
+    "lint:css": "stylelint *.less",
+    "lint:json": "jsonlint --quiet *.json",
+    "lint:markdown": "markdownlint --config .markdownlint.json *.md",
+    "mocha": "mocha tests/",
+    "test": "mocha tests/ -wait",
+    "test:code": "npm run lint:js && npm run lint:css && npm run lint:json && npm run lint:markdown && npm test",
+    "test:parallel": "npm run lint:js & npm run lint:css & npm run lint:json & npm run lint:markdown & npm test",
+    "test:code2": "npm-run-all lint:* mocha",
+    "test:parallel2": "npm-run-all --parallel lint:* mocha"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "chai": "^4.2.0",
+    "eslint": "^5.3.0",
+    "eslint-config-airbnb": "^17.1.0",
+    "eslint-plugin-import": "^2.16.0",
+    "eslint-plugin-jsx-a11y": "^6.2.1",
+    "eslint-plugin-react": "^7.12.4",
+    "jsonlint": "^1.6.3",
+    "markdownlint-cli": "^0.14.0",
+    "mocha": "^6.0.2",
+    "npm-run-all": "^4.1.5",
+    "stylelint": "^9.10.1",
+    "stylelint-config-standard": "^18.2.0"
+  },
+  "dependencies": {}
+}
