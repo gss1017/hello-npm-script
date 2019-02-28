@@ -1,0 +1,7 @@
+"precover": "npm run cover:cleanup",
+"cover": "nyc --reporter=html npm test",
+"cover:cleanup": "rimraf coverage && rimraf .nyc_output",
+"cover:archive": "cross-var \"make-dir coverage_archive/$npm_package_version && cpr coverage/* coverage_archive/$npm_package_version -o\"",
+"cover:serve": "cross-var http-server coverage_archive/$npm_package_version -p $npm_package_config_port",
+"cover:open": "cross-var opn http://localhost:$npm_package_config_port",
+"postcover": "npm-run-all cover:archive --parallel cover:serve cover:open"
