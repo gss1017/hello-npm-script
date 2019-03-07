@@ -27,7 +27,6 @@
     "client:reload-server": "livereload client/",
     "client:static-server": "http-server client/",
     "precommit": "lint-staged",
-    "prepush": "npm run test",
     "prebuild": "rm -rf dist && mkdir -p dist/{images,styles,scripts}",
     "build:images": "scripty",
     "build:styles": "scripty",
