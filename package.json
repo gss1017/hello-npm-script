@@ -41,7 +41,7 @@
   "lint-staged": {
     "client/**/*.js": "eslint",
     "client/**/*.less": "stylelint",
-    "*.css": "stylelint",
+    "client/**/*.css": "stylelint",
     "client/**/*.json": "jsonlint --quiet"
   },
   "keywords": [],
