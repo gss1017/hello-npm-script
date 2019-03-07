@@ -1,9 +1,7 @@
-
 .font-color {
-    color: blue;
+    color:blue;
 }
-
 .font-color2 {
-    color: green;
-    background: url("../images/hello.jpg");
+    color:green;
+    background:url("../images/hello.jpg");
 }
