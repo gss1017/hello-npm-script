@@ -1,3 +1,6 @@
+.body-background-image {
+    background:url("../images/hello.jpg");
+}
 .font-color {
     color:blue;
 }
