@@ -35,7 +35,8 @@
     "build": "scripty",
     "release:patch": "npm version patch && git push && git push --tags",
     "release:minor": "npm version minor && git push && git push --tags",
-    "release:major": "npm version major && git push && git push --tags"
+    "release:major": "npm version major && git push && git push --tags",
+    "bump": "scripty"
   },
   "lint-staged": {
     "client/**/*.js": "eslint",
