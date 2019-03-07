@@ -33,7 +33,7 @@
     "*.js": "eslint",
     "*.less": "stylelint",
     "*.css": "stylelint",
-    "*.json": "jsonlint --quient"
+    "*.json": "jsonlint --quiet"
   },
   "keywords": [],
   "author": "",
