@@ -1,6 +1,6 @@
 {
   "name": "hello-npm-script",
-  "version": "1.1.0",
+  "version": "1.1.1",
   "config": {
     "port": 3000
   },
